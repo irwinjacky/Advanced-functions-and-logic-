@@ -8,8 +8,11 @@ i = 0
 while True:
     #create a variable for the length of the list
     length = len(list_one)
+    #once you reach the end of the list length end the loop
+    if i == length:
+        break
     #check i value type
-    if type(list_one[i]) == list:
+    if type(list_one[i]) == type(list):
         #set the list equal to to the inner list
         list_one = list_one[i]
         #reset the value of i
@@ -17,12 +20,9 @@ while True:
     #if value of i is not list then move on
     else:
         i += 1
-    #once you reach the end of the list length end the loop
-    if i == length:
-        break
+    
 #adjust the list to add one to the values in the list
 list_one_adj = [x + 1 for x in list_one]
-#print the adjusted inner list
-print(list_one_adj)
 
+print(list_one_adj)
 # %%
