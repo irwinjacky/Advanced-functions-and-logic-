@@ -6,8 +6,8 @@ list2 = input_list
 def sublist2(list2):    #create function
     list_output = list2 #create a list that isn't changing the function
     i = 0               #set index to 0
-    while type(list_output) == type(list) and i < len(list_output):
-        if type(list_output[i]) == type(list):
+    while type(list_output) != int and i < len(list_output):
+        if type(list_output[i]) != int:
             list_output = list_output[i]
             i = 0
         else:

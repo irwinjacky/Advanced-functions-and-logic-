@@ -12,7 +12,7 @@ while True:
     if i == length:
         break
     #check i value type
-    if type(list_one[i]) == type(list):
+    if type(list_one[i]) != int:
         #set the list equal to to the inner list
         list_one = list_one[i]
         #reset the value of i
